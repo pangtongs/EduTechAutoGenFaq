@@ -35,6 +35,7 @@ reddit = praw.Reddit(
   user_agent=config.user_agent
 )
 subreddit=reddit.subreddit('OMSCS')
+
 hot_python = subreddit.hot(limit=500)
 
 for submission in hot_python:
